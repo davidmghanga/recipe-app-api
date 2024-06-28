@@ -42,7 +42,6 @@ To run the deployment server locally,
    ```sh
    netstat -ano | findstr :80
    ```
-   It should be empty
 2. Cd into the project directory, then copy the sample environment values by running the following command in Terminal/Command Prompt
    ```sh
    cp .env.sample .env
@@ -51,7 +50,7 @@ To run the deployment server locally,
    ```sh
    docker compose -f docker-compose-deploy.yml up
    ```
-4. Browse the documentation of all the endpoints at http://127.0.0.1
+4. Browse the documentation of all the endpoints at http://127.0.0.1/api/docs
 ### Creating a superuser
 To create a superuser to access the Django admin, follow these steps:
 1. Run the below command and follow the in terminal instructions:
