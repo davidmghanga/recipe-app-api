@@ -51,8 +51,8 @@ To run the deployment server locally,
    docker compose -f docker-compose-deploy.yml up
    ```
 4. Browse the documentation of all the endpoints at http://127.0.0.1/api/docs
-### Creating a superuser
-To create a superuser to access the Django admin, follow these steps:
+### Create a superuser
+To create a superuser in the deployment server to access the Django admin, follow these steps:
 1. Run the following command and follow the in terminal instructions:
    ```sh
    docker compose -f docker-compose-deploy.yml run --rm app sh -c "python manage.py createsuperuser"
